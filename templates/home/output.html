@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Output</title>
+			<style>
+				h1 {
+					text-align: center;
+				}
+			table {
+			  font-family: arial, sans-serif;
+			  border-collapse: collapse;
+			  width: 100%;
+			}
+
+			td, th {
+			  border: 1px solid #dddddd;
+			  text-align: left;
+			  padding: 8px;
+			}
+
+			tr:nth-child(even) {
+			  background-color: #dddddd;
+			}
+			</style>
+</head>
+<body>
+	<h1 >Calculation Details</h1>
+
+<table class="cotainer">
+  <tr style="color: #8B0000">
+    <th>Description</th>
+    <th>Units</th>
+    <th>Values</th>
+  </tr>
+  <tr>
+    <td>Pipe Inside Radius - r1</td>
+    <td>in</td>
+    <td>{{E3}}</td>
+  </tr>
+  <tr>
+    <td>Pipe Outside Radius - r2</td>
+    <td>in</td>
+    <td>{{E4}}</td>
+  </tr>
+  <tr>
+    <td>Outer Radius of Coating 1 - r3 </td>
+    <td>in</td>
+    <td>{{E5}}</td>
+  </tr>
+  <tr style="color: #0000FF">
+    <td>Total Pipeline Outside Diameter</td>
+    <td> </td>
+    <td>{{E5}}</td>
+  </tr>
+  
+</table>
+
+<!-- ///////////////////////////////////////// -->
+<h1>Calculate Dry Unit Weight</h1>
+
+<table class="cotainer">
+  <tr style="color: #8B0000">
+    <th>Description</th>
+    <th>Installation Empty</th>
+  </tr>
+  <tr>
+    <td>Pipe Weight per Unit Length in Air (lb/ft):</td>
+    
+    <td>#REF!</td>
+  </tr>
+  <tr>
+    <td>Coating 1 Wt. per Unit Length in Air (lb/ft):</td>
+    
+    <td>{{E10}}</td>
+  </tr>
+  <tr>
+    <td>Contents Wt. Per Unit Length in Air (lb/ft):</td>
+   
+    <td>{{E11}}</td>
+  </tr>
+  <tr style="color: #0000FF">
+    <td >Total Weight per Unit Length in Air (lb/ft):</td>
+    
+    <td>#REF!</td>
+  </tr>
+    <tr style="color: #006400">
+    <td>Buoyant Force per Unit Length (lb/ft):</td>
+    
+    <td>{{E13}}</td>
+  </tr>
+  
+</table>
+<!-- /////////////////////////////////////////////// -->
+<h1>Summary of Submerged Weight</h1>
+<table class="cotainer">
+  <tr style="color: #8B0000">
+    <th>Description</th>
+    <th>Submerged Weight/Unit Length (lb/ft)</th>
+    <th>Subm. Specific Gravity with respect to S.W.</th>
+  </tr>
+  <tr style="color: #0000FF">
+    <td class="rc">Installation Empty</p></td>
+    
+    <td>#REF!</td>
+    <td>#REF!</td>
+  </tr>
+</table>
+</body>
+</html>
